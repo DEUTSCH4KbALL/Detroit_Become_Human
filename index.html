@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link rel="shortcut icon" href="./img/Logo.jpg" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detroit: Become Human | Quantic Dream</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="./index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <div class="image-container">
+        <img src="./img/header.jpeg" alt="Header Image">
+        <div class="text-overlay">Detroit: Become Human</div>
+        <button id="themeButton" class="theme-button">Сменить тему</button>
+        <select id="languageSelect" class="language-select">
+            <option value="ru">Русский</option>
+            <option value="en">English</option>
+            <option value="fr">Français</option>
+            <option value="uk">Українська</option>
+            <option value="de">Deutsch</option>
+            <option value="ko">한국어</option>
+        </select>
+    </div>
+
+    <!-- Welcome Section -->
+    <section id="content">
+        <h1>Добро пожаловать в будущее</h1>
+        <p>Сможете ли вы изменить судьбу андроидов?</p>
+        <a href="#about" class="btn">Узнать больше</a>
+    </section>
+
+    <!-- Highlights -->
+    <div class="highlight">
+        <h3>Впечатляющий сюжет</h3>
+        <p>Каждое ваше решение влияет на развитие событий, открывая новые пути в игре.</p>
+    </div>
+
+    <div class="highlight">
+        <h3>Глубокие персонажи</h3>
+        <p>Погрузитесь в истории Кары, Маркуса и Коннора, которые борются за свою свободу.</p>
+    </div>
+
+    <div class="highlight">
+        <h3>Техническое превосходство</h3>
+        <p>Насладитесь захватывающей графикой 4K и плавным геймплеем в 60 FPS.</p>
+    </div>
+
+    <!-- Features Section -->
+    <section id="features">
+        <div class="card">
+            <h2>Искусственный интеллект</h2>
+            <p>Изучите, как AI трансформирует индустрию игр и улучшает пользовательский опыт.</p>
+            <a href="./AI.html" class="btn">Узнать больше</a>
+        </div>
+
+        <div class="card">
+            <h2>Персонажи</h2>
+            <p>Погрузитесь в истории персонажей Detroit: Become Human и их уникальные пути.</p>
+            <a href="./Characters.html" class="btn">Подробнее</a>
+        </div>
+
+        <div class="card">
+            <h2>Будущее технологий</h2>
+            <p>Узнайте, как технологии будущего меняют повседневную жизнь, согласно идеям Quantic Dream.</p>
+            <a href="#future-tech" class="btn">Читать статью</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>О ИГРЕ</h2>
+        <p><strong>Detroit: Become Human</strong> — это приключенческая игра от <span style="color: #0ff;">Quantic
+                Dream</span>, исследующая будущее, где андроиды становятся разумными.</p>
+    </section>
+
+    <section class="highlights">
+        <h2>HIGHLIGHTS</h2>
+        <div class="photos">
+            <a
+                href="https://www.youtube.com/watch?v=XnM8DOqO4DM&embeds_referring_euri=https%3A%2F%2Fwww.quanticdream.com%2F&source_ve_path=OTY3MTQ"><img
+                    src="./img/maxresdefault.jpg" alt="Фото 1"></a>
+            <a href="https://www.dropbox.com/s/n52grqywwi8xrtj/presskit_detroit.zip?dl=1"><img src="./img/2.jpeg"
+                    alt="Фото 2"></a>
+        </div>
+    </section>
+
+    <section id="screenshots">
+        <h2>Скриншоты</h2>
+        <div class="gallery">
+            <img src="./img/screenshots/7f6b7a9c808b32cd8d7e48f19e723377_th.jpeg" alt="Скриншот 1">
+            <img src="./img/screenshots/80a6da5f447bae655d36e4f344aac860_th.jpeg" alt="Скриншот 2">
+            <img src="./img/screenshots/83eb2a5fa91ed96210bd430237e9559b_th.jpeg" alt="Скриншот 3">
+            <img src="./img/screenshots/d24318880b31290355e8aa5dab5ed11d_th.jpeg" alt="Скриншот 4">
+        </div>
+    </section>
+
+    <div id="quiz">
+        <h3>Какой герой Detroit: Become Human вам нравится?</h3>
+        <form id="quizForm">
+            <label><input type="radio" name="hero" value="Кэра"> Кэра</label><br>
+            <label><input type="radio" name="hero" value="Маркус"> Маркус</label><br>
+            <label><input type="radio" name="hero" value="Коннор"> Коннор</label><br>
+            <button type="button" id="submitQuiz">Ответить</button>
+        </form>
+        <p id="quizResult"></p>
+    </div>
+
+
+    <section id="videos">
+        <div class="video-container">
+            <h2>Видео</h2>
+            <video id="player" width="600" controls>
+                <source src="./img/videos/Detroit_ Become Human - Shorts_ Chloe _ PS4.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео.
+            </video>
+
+            <video id="player" width="600" controls>
+                <source src="./img/videos/Detroit_ Become Human - PC Teaser Trailer _ Quantic Dream.mp4"
+                    type="video/mp4">
+                Ваш браузер не поддерживает видео.
+            </video>
+        </div>
+    </section>
+
+    <a href="https://store.steampowered.com/app/1222140/Detroit_Become_Human/" class="btn">Скачать DETROIT: Become Human
+        Сейчас
+    </a>
+
+    <section id="system-requirements">
+        <div class="requirements-container">
+            <h2>System Requirements</h2>
+            <div class="requirements-content">
+                <h3>Overview</h3>
+                <p>Detroit: Become Human, the latest and most ambitious video game production from Quantic Dream, is
+                    finally coming to PC! Featuring world-renowned actors like <strong>Jesse Williams</strong>
+                    (<em>Grey’s Anatomy</em>), <strong>Clancy Brown</strong> (<em>Carnivale</em>), <strong>Lance
+                        Henriksen</strong> (<em>Aliens</em>), <strong>Bryan Dechart</strong> (<em>True Blood</em>), and
+                    <strong>Valorie Curry</strong> (<em>Twilight</em>), the game places the destiny of both mankind and
+                    androids in your hands. Enter a near future where every choice you make shapes the outcome of an
+                    intricately branching narrative.
+                </p>
+
+                <h3>Key Features</h3>
+                <ul>
+                    <li><strong>Gripping Narrative:</strong> Discover a world where moral dilemmas and difficult
+                        decisions can turn android slaves into revolutionaries.</li>
+                    <li><strong>Your Choices Matter:</strong> Shape the fate of the three main characters and the entire
+                        city of Detroit.</li>
+                    <li><strong>Countless Endings:</strong> Replay again and again to discover unique outcomes.</li>
+                    <li><strong>Fully Optimized for PC:</strong> Experience stunning graphics, 4K resolution, and smooth
+                        60 fps gameplay.</li>
+                </ul>
+
+                <h3>Specifications</h3>
+                <div class="requirements-specs">
+                    <div>
+                        <h4>Minimum:</h4>
+                        <ul>
+                            <li>OS: Windows 10 (64 bit)</li>
+                            <li>Processor: Intel Core i5-2300 @ 2.8 GHz or Ryzen 3 1200 @ 3.1GHz</li>
+                            <li>Memory: 8GB RAM</li>
+                            <li>Video: Nvidia GeForce GTX 780 or AMD HD 7950 (Vulkan 1.1 required)</li>
+                            <li>Video RAM: 3GB or more</li>
+                            <li>Hard Drive: 55 GB</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Recommended:</h4>
+                        <ul>
+                            <li>OS: Windows 11 (64 bit)</li>
+                            <li>Processor: Intel i5-6600 @ 3.3 GHz or Ryzen 3 1300 X @ 3.4 GHz</li>
+                            <li>Memory: 12GB RAM</li>
+                            <li>Video: Nvidia GeForce GTX 1060 or AMD Radeon RX 580 (Vulkan 1.1 required)</li>
+                            <li>Video RAM: 4GB or more</li>
+                            <li>Hard Drive: 55 GB</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <p class="copyright">
+                    &copy; 2018 Sony Interactive Entertainment Europe ltd. Developed by Quantic Dream SAS. "Detroit:
+                    Become Human" is a trademark of Sony Interactive Entertainment Europe. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h2>QUANTIC DREAM</h2>
+            </div>
+            <div class="footer-right">
+                <a href="https://www.quanticdream.com/en/contact">Contact Us</a>
+                <a href="https://www.quanticdream.com/en/press">Press Area</a>
+                <a href="https://www.quanticdream.com/en/terms-of-use">Terms of Use</a>
+                <a href="https://www.quanticdream.com/en/legal-information">Legal Info</a>
+                <a href="https://www.quanticdream.com/en/privacy-policy">Confidentiality</a>
+                <a href="https://www.quanticdream.com/en/media-gallery">Media Gallery</a>
+                <a href="https://support.quanticdream.com/hc/en-us">Support</a>
+                <a href="https://www.quanticdream.com/en/sign-up">Newsletter</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Quantic Dream</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
